@@ -1,4 +1,5 @@
-Create database `Musica`
+Create database `Musica`;
+USE musica;
 CREATE TABLE Disquera(
   id_Disquera int NOT NULL AUTO_INCREMENT,
   nitDisquera varchar(20) NOT NULL,
@@ -11,6 +12,14 @@ CREATE TABLE Disquera(
 Create TABLE Genero(
   id_Genero int NOT NULL AUTO_INCREMENT,
   nombreGenero varchar(30) NOT NULL,
-  estadoGenero boolean(1) NOT NULL,
+  estadoGenero boolean NOT NULL,
   PRIMARY key(id_Genero)
-)
+);
+CREATE Table album (
+  idAlbum int AUTO_INCREMENT PRIMARY KEY,
+  anoPublicacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  estadoAlbum BOOLEAN,
+  nombreAlbum VARCHAR(30) NOT NULL,
+  idArtista INTEGER NOT NULL,
+  idGenero INTEGER NOT NULL
+);

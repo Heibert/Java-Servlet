@@ -10,11 +10,13 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Generos</a>
+          <a href="#" class="brand-logo">Index</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="genero?accion=index">Inicio</a></li>
             <li><a href="genero?accion=abrirFormulario">Crear genero</a></li>
             <li><a href="genero?accion=listar">Generos</a></li>
+            <li><a href="album?accion=abrirForm">Crear album</a></li>
+            <li><a href="album?accion=listar">Albums</a></li>
           </ul>
         </div>
       </nav>

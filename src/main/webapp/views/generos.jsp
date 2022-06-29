@@ -40,7 +40,7 @@
                 ${Genero.getNombreGenero()}
             </td>
             <c:if test="${Genero.getEstadoGenero() == true}">
-              <td><span class="green-text">Genero Activo</span></td> 
+              <td><span class="green">Genero Activo</span></td> 
             </c:if>
         <c:if test="${Genero.getEstadoGenero() == false}">
             <td><span class="red-text">Genero Inactivo</span></td> 
@@ -52,8 +52,7 @@
         </a>
         </c:if>
         <c:if test="${Genero.getEstadoGenero() == false}">
-            <a 
-            class="btn green" href="genero?accion=cEstado&id=${Genero.getIdGenero()}&Estado=false">
+        <a class="btn green" href="genero?accion=cEstado&id=${Genero.getIdGenero()}&Estado=false">
         Activar
         </a>
         </c:if> 
@@ -70,7 +69,7 @@
                         <input type="checkbox" id="estado" checked="checked"/>
                      </c:if>
                      <c:if test="${Genero.getEstadoGenero() == false}">
-                        <input type="checkbox" id="estado">
+                        <input type="checkbox">
                     </c:if> 
                     <div class="row">
                       Activo

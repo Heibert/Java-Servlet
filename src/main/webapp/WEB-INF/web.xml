@@ -15,4 +15,12 @@
   <servlet-name>Controller.Genero</servlet-name>
   <url-pattern>/genero</url-pattern>
 </servlet-mapping>
+<servlet>
+  <servlet-name>Controller.Album</servlet-name>
+  <servlet-class>Controller.Album</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>Controller.Album</servlet-name>
+  <url-pattern>/album</url-pattern>
+</servlet-mapping>
 </web-app>

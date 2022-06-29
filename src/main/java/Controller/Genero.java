@@ -88,6 +88,7 @@ public class Genero extends HttpServlet{
             }
         }
         private void eliminar(HttpServletRequest req, HttpServletResponse resp) {
+            System.out.println(req.getParameter("id"));
             if(req.getParameter("id")!=null) {
                 gVo.setIdGenero(Integer.parseInt(req.getParameter("id")));
             }
